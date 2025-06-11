@@ -1,0 +1,62 @@
+.rutinas-panel {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    color: #fff;
+  }
+  
+  .rutinas-titulo {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+  
+  .selector-grupo {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  
+  .selector-grupo label {
+    font-weight: bold;
+  }
+  
+  .selector-grupo select {
+    padding: 0.5rem;
+    border-radius: 8px;
+    background-color: #2e2e2e;
+    color: #fff;
+    border: none;
+  }
+  
+  .ejercicios-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .ejercicio-card {
+    background-color: #1f1f1f;
+    border-radius: 10px;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    transition: transform 0.2s ease;
+  }
+  
+  .ejercicio-card:hover {
+    transform: scale(1.03);
+  }
+  
+  .ejercicio-card img {
+    width: 100%;
+    border-radius: 8px;
+    max-height: 160px;
+    object-fit: cover;
+  }
+  
+  .ejercicio-card h4 {
+    margin-top: 0.8rem;
+    color: #00ffb3;
+  }
+  

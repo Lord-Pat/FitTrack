@@ -1,0 +1,115 @@
+.progreso-panel {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 1rem;
+    color: #fff;
+  }
+  
+  .progreso-titulo {
+    font-size: 1.8rem;
+    color: #00ffb3;
+    margin-bottom: 1rem;
+  }
+  
+  /* Bloques principales */
+  .progreso-panel section {
+    background-color: #1f1f1f;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease;
+  }
+  
+  .progreso-panel section:hover {
+    transform: translateY(-4px);
+  }
+  
+  .progreso-panel h3 {
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+    color: #00c9ff;
+  }
+  
+  /* Placeholder de gráficos */
+  .chart-placeholder {
+    background-color: #2a2a2a;
+    height: 240px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ccc;
+    font-style: italic;
+  }
+  
+  /* Selector de ejercicio */
+  .selector-ejercicio {
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .selector-ejercicio label {
+    font-weight: bold;
+    color: #ccc;
+  }
+  
+  .selector-ejercicio select {
+    padding: 0.5rem;
+    border-radius: 8px;
+    border: none;
+    background-color: #2e2e2e;
+    color: #fff;
+    font-size: 1rem;
+    outline: none;
+    transition: background 0.3s ease;
+  }
+  
+  .selector-ejercicio select:hover {
+    background-color: #3a3a3a;
+  }
+  
+  .peso-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .recordatorio-alerta {
+    color: #ffc107;
+    font-style: italic;
+    font-size: 0.9rem;
+  }
+  
+  .peso-formulario {
+    display: flex;
+    gap: 1rem;
+    margin: 1rem 0;
+    flex-wrap: wrap;
+  }
+  
+  .peso-formulario input {
+    padding: 0.5rem;
+    border-radius: 8px;
+    border: none;
+    background-color: #2e2e2e;
+    color: white;
+  }
+  
+  .peso-formulario button {
+    background-color: #00ffb3;
+    color: black;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .peso-formulario button:hover {
+    background-color: #00d69b;
+  }
+  

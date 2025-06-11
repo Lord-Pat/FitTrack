@@ -1,0 +1,114 @@
+.mis-rutinas-panel {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    color: #fff;
+  }
+  
+  .titulo-rutinas {
+    font-size: 1.8rem;
+  }
+  
+  .formulario-rutina {
+    background: #1f1f1f;
+    padding: 1.5rem;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  input {
+    padding: 0.5rem;
+    border-radius: 8px;
+    border: none;
+    background: #2e2e2e;
+    color: #fff;
+  }
+  
+  .agregar-ejercicio {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+  }
+  
+  .agregar-ejercicio button {
+    background: #00ffb3;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #000;
+  }
+  
+  .lista-ejercicios {
+    list-style: none;
+    padding-left: 1rem;
+    color: #bbb;
+    font-style: italic;
+  }
+  
+  .btn-crear {
+    background-color: #00ffb3;
+    padding: 0.6rem;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #000;
+  }
+  
+  .rutinas-guardadas {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .rutina-card {
+    background: #2e2e2e;
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  }
+  
+  .cabecera-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .cabecera-card h4 {
+    margin: 0;
+    color: #fff;
+  }
+  
+  .grupo {
+    font-size: 0.9rem;
+    color: #00ffb3;
+  }
+  
+  .contenido-card {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .contenido-card ul {
+    padding-left: 1.2rem;
+    color: #ccc;
+  }
+  
+  .contenido-card button {
+    align-self: flex-start;
+    padding: 0.4rem 0.8rem;
+    border-radius: 8px;
+    border: none;
+    background-color: #00ffb3;
+    color: #000;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  

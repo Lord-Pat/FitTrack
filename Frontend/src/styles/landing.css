@@ -1,0 +1,401 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body, html, .landing {
+    height: 100%;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #1f1f1f, #3d3d3d);
+    color: white;
+  }
+  
+  /* Cambio de colores bg*/
+  body, html {
+    height: 100%;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  /* Tema oscuro por defecto */
+  .landing {
+    background: linear-gradient(135deg, #1f1f1f, #3d3d3d);
+    color: white;
+  }
+  
+  /* Tema claro */
+  .landing.light {
+    background: linear-gradient(135deg, #ffffff, #e7e7e7);
+    color: #111;
+  }
+  
+  .landing.light .landing-header {
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+  
+  .landing.light .landing-hero p,
+  .landing.light .benefit p,
+  .landing.light .feature-box p {
+    color: #333;
+  }
+  
+  .landing.light .benefit,
+  .landing.light .feature-box {
+    background-color: #f2f2f2;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .landing.light .cta-btn {
+    background-color: #111;
+    color: white;
+  }
+  
+  .landing.light .cta-btn:hover {
+    background-color: #333;
+  }
+  
+  /* Botón del header */
+  .theme-toggle {
+    margin-left: 1rem;
+    background: none;
+    color: inherit;
+    border: 1px solid currentColor;
+    padding: 0.3rem 0.8rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+  }
+  
+  .theme-toggle:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  
+  /* Header */
+  .landing-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 2rem;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  
+  .landing-header h1 {
+    font-size: 1.8rem;
+  }
+  
+  .landing-header nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 1.5rem;
+    font-weight: 500;
+    transition: color 0.3s;
+  }
+  
+  .landing-header nav a:hover {
+    color: #00ffb3;
+  }
+  
+  /* Hero */
+  .landing-hero {
+    text-align: center;
+    padding: 5rem 2rem;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+  
+  .landing-hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .landing-hero p {
+    font-size: 1.1rem;
+    margin-bottom: 2.5rem;
+    color: #f1f1f1;
+  }
+  
+  .cta-btn {
+    display: inline-block;
+    padding: 0.9rem 2rem;
+    background-color: #00ffb3;
+    color: #111;
+    font-weight: bold;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: background 0.3s;
+  }
+  
+  .cta-btn:hover {
+    background-color: #00d69b;
+  }
+  
+  /* Responsive */
+  @media (max-width: 600px) {
+    .landing-header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .landing-header nav {
+      margin-top: 1rem;
+    }
+  
+    .landing-hero h2 {
+      font-size: 2rem;
+    }
+  }
+  
+  /* Beneficios */
+.landing-benefits {
+    background-color: #222;
+    color: white;
+    padding: 4rem 2rem;
+    text-align: center;
+  }
+  
+  .landing-benefits h3 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .benefits-list {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+  /* Gradient title */
+  .benefits-title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    background: linear-gradient(90deg, #00ffb3, #00c9ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+  }
+
+  /* Gradient title animation */
+  .gradient-animated {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    background: linear-gradient(270deg, #00ffb3, #00c9ff, #00ffb3);
+    background-size: 400% 100%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    animation: gradientShift 6s ease infinite;
+  }
+  
+  @keyframes gradientShift {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  
+  
+  .benefit {
+    background-color: #2a2a2a;
+    padding: 2rem;
+    border-radius: 10px;
+    width: 280px;
+    text-align: center;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    transform: translateY(0);
+  }
+  
+  .benefit:hover {
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.5);
+  }
+  
+  .benefit span {
+    font-size: 2rem;
+    display: block;
+    margin-bottom: 1rem;
+  }
+  
+  .benefit h4 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .benefit p {
+    color: #ccc;
+    font-size: 0.95rem;
+  }
+  
+
+  /* Social */
+  .landing-social {
+    background-color: #1a1a1a;
+    color: white;
+    padding: 4rem 2rem;
+    text-align: center;
+  }
+  
+  .social-title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .social-features {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+  }
+  
+  .feature-box {
+    background-color: #2a2a2a;
+    border-radius: 10px;
+    padding: 2rem;
+    width: 280px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+  }
+  
+  .feature-box:hover {
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.5);
+  }
+  
+  .feature-box h4 {
+    margin: 1rem 0 0.5rem;
+    font-size: 1.3rem;
+  }
+  
+  .feature-box p {
+    color: #ccc;
+    font-size: 0.95rem;
+  }
+  
+  .feature-box .emoji {
+    font-size: 2rem;
+    display: block;
+  }
+  
+  
+  /* Footer */
+  .landing-footer {
+    background-color: #111;
+    color: #ccc;
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .footer-links {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+  
+  .footer-links a {
+    color: #ccc;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .footer-links a:hover {
+    color: #00ffb3;
+  }
+
+  /* Animaciones btn */
+
+    .cta-btn {
+    display: inline-block;
+    padding: 0.9rem 2rem;
+    background-color: #00ffb3;
+    color: #111;
+    font-weight: bold;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    transform: translateY(0);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    }
+
+    .cta-btn:hover {
+    background-color: #00d69b;
+    transform: translateY(-8px) scale(1.05);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+    }
+  /* Animaciones nav y footer */
+
+  .landing-header nav a,
+  .footer-links a {
+    color: white;
+    text-decoration: none;
+    margin-left: 1.5rem;
+    font-weight: 500;
+    position: relative;
+    transition: color 0.3s ease;
+  }
+  
+  .landing-header nav a::after,
+  .footer-links a::after {
+    content: "";
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #00ffb3;
+    transition: width 0.3s ease;
+  }
+  
+  .landing-header nav a:hover,
+  .footer-links a:hover {
+    color: #00ffb3;
+  }
+  
+  .landing-header nav a:hover::after,
+  .footer-links a:hover::after {
+    width: 100%;
+  }
+  .landing-header nav a,
+  .footer-links a {
+    color: white;
+    text-decoration: none;
+    margin-left: 1.5rem;
+    font-weight: 500;
+    position: relative;
+    transition: color 0.3s ease;
+  }
+  
+  .landing-header nav a::after,
+  .footer-links a::after {
+    content: "";
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #00ffb3;
+    transition: width 0.3s ease;
+  }
+  
+  .landing-header nav a:hover,
+  .footer-links a:hover {
+    color: #00ffb3;
+  }
+  
+  .landing-header nav a:hover::after,
+  .footer-links a:hover::after {
+    width: 100%;
+  }
+    

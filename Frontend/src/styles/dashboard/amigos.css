@@ -1,0 +1,106 @@
+.amigos-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  color: #fff;
+}
+
+.amigos-titulo {
+  font-size: 1.8rem;
+}
+
+.form-nuevo-amigo {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.form-nuevo-amigo input {
+  padding: 0.5rem;
+  border-radius: 8px;
+  background: #2e2e2e;
+  border: none;
+  color: #fff;
+  flex: 1;
+}
+
+.form-nuevo-amigo button {
+  background-color: #00ffb3;
+  border: none;
+  border-radius: 8px;
+  padding: 0.6rem 1rem;
+  font-weight: bold;
+  color: #000;
+  cursor: pointer;
+}
+
+.grid-amigos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+.card-amigo {
+  background-color: #1f1f1f;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  position: relative;
+}
+
+.estado {
+  position: absolute;
+  top: 0.8rem;
+  right: 0.8rem;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #bbb;
+}
+.estado[data-online="true"] {
+  background: #00ffb3;
+}
+
+.card-amigo h4 {
+  margin: 0;
+  color: #00ffb3;
+}
+
+.card-amigo input {
+  padding: 0.4rem;
+  border-radius: 6px;
+  border: none;
+  background: #2e2e2e;
+  color: #fff;
+}
+
+.acciones-amigo {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.acciones-amigo button {
+  background-color: #444;
+  color: #fff;
+  border: none;
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background 0.2s;
+}
+
+.acciones-amigo button:hover {
+  background-color: #666;
+}
+
+.acciones-amigo .eliminar {
+  background-color: #ff5252;
+}
+.acciones-amigo .eliminar:hover {
+  background-color: #e04343;
+}
